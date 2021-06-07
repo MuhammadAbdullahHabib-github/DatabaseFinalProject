@@ -1,0 +1,23 @@
+.review__form__stepper{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review__form__stepper__ul{
+    color:#363636;
+    margin-left: 2%;
+}
+
+.review__form__stepper__question{
+    color:#2EC771;
+}
+
+.review__form__stepper__question__span{
+    color:#363636
+}
+
+.review__form__stepper__question__margins{
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
