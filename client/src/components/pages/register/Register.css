@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.register {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.register__form {
+    width: 80%;
+    border-radius: 20px;
+    margin: 5%;
+    box-shadow: 1.5px 1.5px 5px  #ccc , -1.5px -1.5px 5px  #ccc;
+    border:1px solid #B0B0B0;
+    padding-bottom: 4%;
+    background-color: #fff;
+}
+
+.register__form > h2{
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: 'Kalam', cursive;
+    color: #2EC771;
+    padding-top: 2.5%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.register__form > p {
+    text-align: center;
+    color: #363636;
+    font-size: 0.9vw;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    padding-bottom: 1.5%;
+    border-bottom: 1px solid #d3d3d3;
+    background-color: #fff;
+}
+
+.register__name{
+    width: 95%;
+    padding:1.5% 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.register__name__firstname{
+    border:2.5px solid #d3d3d3;
+    border-bottom: 1.2px solid #d3d3d3;
+    padding: 3% 1.5% 3% 1.5%;
+    border-radius:  8px 8px 0px 0px;
+    background-color: #fff;
+}
+
+.register__name__lastname{
+    border:2.5px solid #d3d3d3;
+    border-top: 1.2px solid #d3d3d3;
+    padding: 3% 1.5% 3% 1.5%;
+    border-radius: 0px 0px 8px 8px ;
+    background-color: #fff;
+}
+
+.register__name > p {
+    color:#6C757D;
+    font-size: 0.75vw;
+    padding-top: 1.1%;
+    background-color: #fff;
+}
+
+.register__regno{
+    width: 95%;
+    padding:1.6% 0%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.register__regno > input {
+    width: 100%;
+    border:2.5px solid #d3d3d3;
+    padding: 3% 1.5% 3% 1.5%;
+    border-radius:  8px ;
+    background-color: #fff;
+}
+
+.register_email {
+    width:95%;
+    padding:1.6% 0%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.register_email  > input {
+    width: 100%;
+    border:2.5px solid #d3d3d3;
+    padding: 3% 1.5% 3% 1.5%;
+    border-radius:  8px ;
+    background-color: #fff;
+}
+
+.register_email > p {
+    color:#6C757D;
+    font-size: 0.75vw;
+    padding-top: 1.1%;
+    background-color: #fff;
+}
+
+
+.register__mobile {
+    width: 95%;
+    padding:3% 0%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    
+}
+
+.register__mobile > input {
+    width: 100%;
+    border:2.5px solid #d3d3d3;
+    padding: 3% 1.5% 3% 1.5%;
+    border-radius:  8px ;
+    background-color: #fff;
+}
+
+.register__faculty{
+    width: 95%;
+    padding:1% 0%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.register__faculty > select {
+    width: 100%;
+    font-size: 0.9vw;
+    color: #6C757D;
+    border:2.5px solid #d3d3d3;
+    padding: 2.5% 1.5% 2.5% 1.5%;
+    border-radius:  8px ;
+    background-color: #fff;
+    font-weight: 500;
+}
+
+.register__faculty__option {
+    color:#6C757D;
+    font-size: 1VW;
+    background-color: #fff;
+}
+
+.regester__location{
+    width: 95%;
+    padding: 1.6% 0%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #fff;
+}
+
+.regester__location__hostel {
+    width:100%;
+    border:2.5px solid #d3d3d3;
+    border-right: 1.25px solid #d3d3d3;
+    padding: 3% 1.5% 3% 1.5%;
+    border-radius:  8px  0px 0px 8px;
+    background-color: #fff;
+}
+
+.regester__location__room {
+    width:100%;
+    border:2.5px solid #d3d3d3;
+    border-left: 1.25px solid #d3d3d3;
+    padding: 3% 1.5% 3% 1.5%;
+    border-radius: 0px 8px 8px 0px ;
+    background-color: #fff;
+}
+
+.register__password{
+    width: 95%;
+    padding:1.6% 0%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.register__password__noterror > p{
+    display: none;
+}
+
+.register__password__error > p{
+    color:#ff0000;
+    font-size: 0.75vw;
+    padding-top: 1.1%;
+    background-color: #fff;
+}
+
+.register__show__hidden{
+    display: none;
+}
+
+.register__password__one {
+    border:2.5px solid #d3d3d3;
+    border-bottom: 1.2px solid #d3d3d3;
+    padding: 3% 1.5% 3% 1.5%;
+    border-radius:  8px 8px 0px 0px;
+    background-color: #fff;
+}
+
+.register__password__two {
+    border:2.5px solid #d3d3d3;
+    border-top: 1.2px solid #d3d3d3;
+    padding: 3% 1.5% 3% 1.5%;
+    border-radius: 0px 0px 8px 8px ;
+    background-color: #fff;
+}
+
+.register__submit{
+    width: 95%;
+    padding:3% 0%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.register__submit__button {
+    width: 100%;
+    border: none;
+    padding: 3% 1.5% 3% 1.5%;
+    border-radius:  8px ;
+    color: #fff;
+    font-size: 1.1vw;
+    background-color: #2EC771;
+}
+
+input:focus , button:focus {
+    border:2.5px solid #2EC771;
+    outline: none;
+}
+
+select:focus{
+    outline: none;
+}
+
+.register__seperator{
+    border-bottom: 1px solid #aaaaaa;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.register__seperator  p{
+    text-align: center;
+    font-size: 1vw;
+    width:50px;
+    background-color: #fff;
+    position: relative;
+    color: #aaaaaa;
+    top:0.8em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register__already__account > p {
+    margin:3% 0% 3% 0%;
+    text-align: center;
+    font-size: 1vw;
+    background-color: #fff;
+}
+
+.register__already__account__link {
+    color : #2EC771;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+::placeholder {
+   font-size:1VW ;
+   color:#6C757D;
+}
+
+button:hover{
+    cursor: pointer;
+}
