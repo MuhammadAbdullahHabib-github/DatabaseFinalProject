@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './App.css';
 import axios from 'axios';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import RegistrationForm from './components/pages/register/RegistrationFrom';
+import RegistrationForm from './components/pages/register/RegistrationForm'
 import Login from './components/pages/login/Login';
 import Dashboard from './components/pages/dashboard/Dashboard';
 import Form from './components/pages/form/Form';

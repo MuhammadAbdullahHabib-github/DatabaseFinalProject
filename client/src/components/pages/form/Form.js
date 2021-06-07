@@ -3,7 +3,7 @@ import Navbar from '../dashboard/navbar/Navbar';
 import Sidebar from '../dashboard/sidebar/Sidebar';
 import Stepper from './stepper/Stepper'
 import Footer from '../dashboard/footer/Footer';
-import AlreadyFormSubmitted from './AreadyFromSubmitted/AlreadyFromSubmitted'
+import AlreadyFormSubmitted from './AreadyFormSubmitted/AlreadyFormSubmitted'
 import axios from 'axios';
 
 const Form = ({setAuth ,  breadCrumb}) => {

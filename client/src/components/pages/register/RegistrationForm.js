@@ -1,6 +1,6 @@
 import React from 'react';
 import Register from './Register';
-import Header from '../../layout/Header'
+import Header from '../../layout/Header';
 import './RegistrationForm.css'
 import { ReactComponent as YourSvg } from '../../../assets/images/signup.svg';
 
