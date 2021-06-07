@@ -1,0 +1,35 @@
+.already__form__submitted {
+    grid-area: main;
+    height: 130vh;
+    max-height: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.already__form__submitted__heading{
+    color: #2EC771;
+    font-size: 2.0vw;
+    font-family: "Kalam";
+    text-decoration: underline;
+    margin-bottom: 1%;
+}
+
+.already__form__submitted__questions{
+    color: #2EC771;
+    font-size: 1.0vw;
+    font-weight: 500;
+    word-spacing: 0.5vw;
+}
+
+.already__form__submitted__list{
+    list-style: none;
+    margin-bottom: 5%;
+}
+.already__form__submitted__span{
+    color: #2EC771;
+}
