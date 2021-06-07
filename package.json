@@ -4,8 +4,9 @@
   "description": "Volunteer or induction registration form for projecttopi",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon src/server.js"
-    
+    "starts": "nodemon src/server.js",
+    "start":"node src/server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Muhammad Abdullah Habib",
   "license": "ISC",
