@@ -1,0 +1,16 @@
+.student__form__checkboxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student__form__checkboxes__list {
+    width:45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space{
+   margin-top: 10px;
+}

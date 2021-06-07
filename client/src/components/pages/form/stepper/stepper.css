@@ -1,0 +1,11 @@
+.stepper {
+    grid-area: main;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
