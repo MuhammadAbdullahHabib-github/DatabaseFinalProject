@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Volunteer or induction registration form for projecttopi",
   "main": "server.js",
+  "engines":{
+      "node":"14.15.3",
+      "npm":"6.14.9"
+  },
   "scripts": {
     "starts": "nodemon src/server.js",
     "start":"node src/server.js",

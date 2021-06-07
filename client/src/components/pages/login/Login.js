@@ -10,7 +10,7 @@ const Login = ({setAuth}) => {
 
     const submitForm = async (e) => {
         e.preventDefault();
-        const res = await axios.post("http://localhost:5000/api/student/login", { student_email: student_email, password: password });
+        const res = await axios.post("/api/student/login", { student_email: student_email, password: password });
         localStorage.setItem('token', res.data.token);
         setAuth(true);
     }

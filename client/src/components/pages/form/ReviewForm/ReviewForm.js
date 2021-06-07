@@ -8,11 +8,11 @@ const ReviewForm = ({ submit, values }) => {
     const submitData = async () => {
         submit(4);
         const token = localStorage.getItem("token")
-        const societies = await axios.post("http://localhost:5000/api/registrationform/societies/", {token:token , society_one:values.firstSociety, society_two:values.secondSociety, society_three:values.thirdSociety, society_four:values.fourthSociety});
+        const societies = await axios.post("/api/registrationform/societies/", {token:token , society_one:values.firstSociety, society_two:values.secondSociety, society_three:values.thirdSociety, society_four:values.fourthSociety});
         console.log(societies.data);
-        const forms = await axios.post("http://localhost:5000/api/registrationform/forms", {token:token ,  strength:values.strength , weakness:values.weakness , know_pt_wish:values.wish , part_of_community:values.partOfCommunity , productive_initiatives:values.productiveInitiative , fund_raising_idea:values.fundRaisingIdea})
+        const forms = await axios.post("/api/registrationform/forms", {token:token ,  strength:values.strength , weakness:values.weakness , know_pt_wish:values.wish , part_of_community:values.partOfCommunity , productive_initiatives:values.productiveInitiative , fund_raising_idea:values.fundRaisingIdea})
         console.log(forms.data);
-        const skills = await axios.post("http://localhost:5000/api/registrationform/skills", {token:token ,photoshop:values.photoshop , web_dev:values.Web_Development , video_editing:values.Video_Editing , content_writing:values.Content_Writing , communication_skills:values.Communication_Skills , persuasion_skills:values.Persuasion_Skills , teamwork:values.Teamwork , et_management_skills:values.Event_Management_Skills , leadership_skills:values.Leadership_Skills});
+        const skills = await axios.post("/api/registrationform/skills", {token:token ,photoshop:values.photoshop , web_dev:values.Web_Development , video_editing:values.Video_Editing , content_writing:values.Content_Writing , communication_skills:values.Communication_Skills , persuasion_skills:values.Persuasion_Skills , teamwork:values.Teamwork , et_management_skills:values.Event_Management_Skills , leadership_skills:values.Leadership_Skills});
         console.log(skills.data);
     }
 

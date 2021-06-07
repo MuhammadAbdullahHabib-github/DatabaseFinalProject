@@ -43,7 +43,7 @@ const Navbar = ({breadCrumb}) => {
     useEffect(() => {
         async function userData () {
         const token = localStorage.getItem("token");
-        const res = await axios.post("http://localhost:5000/api/dashboard/", {token: token});
+        const res = await axios.post("/api/dashboard/", {token: token});
         setUsername(res.data.name);
         }
         userData();

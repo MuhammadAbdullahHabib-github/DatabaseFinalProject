@@ -11,12 +11,6 @@ const StudentForm = ({submit , setformValues , prevValues}) => {
            prevValues
         }
 
-        // firstSociety: '', 
-        //    secondSociety: '', 
-        //    thirdSociety: '', 
-        //    fourthSociety: '', 
-        //    strength: '', 
-        //    weakness: '' 
        
        validationSchema={Yup.object({
         strength: Yup.string().required('Required'),

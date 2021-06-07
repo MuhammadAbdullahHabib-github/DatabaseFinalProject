@@ -22,7 +22,7 @@ const Profile = () => {
     useEffect(() => {
         async function responce() {
             const token = localStorage.getItem("token");
-            const res = await axios.post("http://localhost:5000/api/dashboard/", {token: token});
+            const res = await axios.post("/api/dashboard/", {token: token});
             setStudentData(res.data);
             //eslint-disable-next-line
         }
@@ -38,7 +38,7 @@ const Profile = () => {
         if (name !== "") {
             try {
                 const token = localStorage.getItem("token");
-                const res = await axios.put("http://localhost:5000/api/dashboard/update/name", { name: name, token: token })
+                const res = await axios.put("/api/dashboard/update/name", { name: name, token: token })
                 studentData.name = res.data[0].name
             } catch (error) {
                 console.log(error.message);
@@ -48,7 +48,7 @@ const Profile = () => {
         if (number !== "") {
             try {
                 const token = localStorage.getItem("token");
-                const res = await axios.put("http://localhost:5000/api/dashboard/update/contact", { contact_number: number, token: token })
+                const res = await axios.put("/api/dashboard/update/contact", { contact_number: number, token: token })
                 studentData.contact = res.data[0].contact_number;
             } catch (error) {
                 console.log(error.message);
@@ -58,7 +58,7 @@ const Profile = () => {
         if (faculty !== "") {
             try {
                 const token = localStorage.getItem("token");
-                const res = await axios.put("http://localhost:5000/api/dashboard/update/faculty", { faculty: faculty, token: token })
+                const res = await axios.put("/api/dashboard/update/faculty", { faculty: faculty, token: token })
                 studentData.faculty = res.data[0].faculty;
             } catch (error) {
                 console.log(error.message);
@@ -68,7 +68,7 @@ const Profile = () => {
         if (hostel !== 0) {
             try {
                 const token = localStorage.getItem("token");
-                const res = await axios.put("http://localhost:5000/api/dashboard/update/hostel", { hostel: hostel, token: token })
+                const res = await axios.put("/api/dashboard/update/hostel", { hostel: hostel, token: token })
                 studentData.hostel = res.data[0].hostel;
             } catch (error) {
                 console.log(error.message);
@@ -79,7 +79,7 @@ const Profile = () => {
             console.log("room_no")
             try {
                 const token = localStorage.getItem("token");
-                const res = await axios.put("http://localhost:5000/api/dashboard/update/room", { room_no: room, token: token })
+                const res = await axios.put("/api/dashboard/update/room", { room_no: room, token: token })
                 studentData.room_no = res.data[0].room_no
             } catch (error) {
                 console.log(error.message);

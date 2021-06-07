@@ -8,7 +8,7 @@ const AlreadyFromSubmitted = () => {
         const responcefun = async () => {
             const token = localStorage.getItem('token');
             try {
-            const responce = await axios.post("http://localhost:5000/api/registrationform/",{token:token});
+            const responce = await axios.post("/api/registrationform/",{token:token});
             setSocietyOne(responce.data.rows[0].society_one);
             setSocietyTwo(responce.data.rows[0].society_two);
             setSocietyThree(responce.data.rows[0].society_three);

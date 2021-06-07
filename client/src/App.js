@@ -40,7 +40,7 @@ function App() {
     const isAuth = async () => {
         try {
             const token = localStorage.getItem("token");
-            const res = await axios.post("http://localhost:5000/api/student/is-verify", { token: token })
+            const res = await axios.post("/api/student/is-verify", { token: token })
             res.data === true ? setIsAuthenticated(true) : setIsAuthenticated(false);
         } catch (error) {
             console.log(error.message);

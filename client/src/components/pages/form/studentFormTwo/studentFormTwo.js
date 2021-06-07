@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 const studentFormTwo = ({ submit, setformValues, prevValues }) => {
     return (
         <Formik
-            //wish: '', partOfCommunity: '', productiveInitiative: ''
+
             initialValues={prevValues}
             validationSchema={Yup.object({
                 wish: Yup.string()

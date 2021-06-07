@@ -8,8 +8,7 @@ import * as Yup from 'yup';
 const studentFormThree = ({submit , setformValues , prevValues}) => {
     return (
         <Formik
-        //fundRaisingIdea: '', photoshop: '', Web_Development: '' , Video_Editing: '' , Content_Writing : '' , Communication_Skills : '',
-        //Persuasion_Skills:'' , Teamwork: '' , Event_Management_Skills: '' , Leadership_Skills: ''
+    
             initialValues={ prevValues }
             validationSchema={Yup.object({
                 fundRaisingIdea: Yup.string()

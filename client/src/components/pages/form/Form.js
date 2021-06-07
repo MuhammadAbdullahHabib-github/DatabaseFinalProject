@@ -12,7 +12,7 @@ const Form = ({setAuth ,  breadCrumb}) => {
     useEffect(() => {
         const responcefun = async () => {
             const token = localStorage.getItem('token');
-            const responce = await axios.post("http://localhost:5000/api/registrationform/societie",{token:token});
+            const responce = await axios.post("/api/registrationform/societie",{token:token});
             //console.log(responce.data.rows.length);
             responce.data.rows.length !== 0 && setPresent(false) 
         }
